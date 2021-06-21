@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+html{
+	/* overflow: hidden; */
+}
+body{
+background-color:#bfbfbf;
+font-family: 'Roboto', sans-serif;
+margin:0;
+font-size: 16px;
+}
+
+main {
+        background-color: #595959;
+	box-sizing: border-box;
+	width: 400px;
+        height: 400px;
+        margin: 7em auto;
+        border-radius: 1.5em;
+	padding : 30px;
+        box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+}
+
+p{
+     color: #f2f2eb;
+     text-align-last:auto;
+     font-family: 'Roboto',sans-serif;
+     margin: 20px 0;
+     padding: 10px 0;
+}
+
+button.start{
+	display:block;
+	box-sizing: border-box;
+	margin: 40px auto;
+	padding: 10px;
+	min-width: 180px;
+	font-size: 24px;
+	text-decoration: none;
+	border:1px solid #26262613;
+	cursor: pointer;
+	border-radius:5px;
+	color: #f2f2eb;
+	background-color: #404040;
+
+}
+button:hover{
+	border: 2px solid #262626;
+}
+ul li{
+	list-style: none;
+}
+/* weather type picker */
+.img_list{
+	margin-top:50px;
+}
+ .img_list ul{
+	
+	display: flex;
+	padding: 0;
+	justify-content: space-evenly;
+
+}
+.img_list ul li {
+	text-align: center;
+}
+ .img_list ul li a{
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+	text-align: center;
+	text-decoration: none;
+}
+.img_list ul li a img{
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	padding: 8px;
+	border-radius: 50%;
+}
+.img_list ul li a:hover img{
+	background-color:#f2f2eb;
+	
+}
+.img_list ul li a:focus img{
+	background-color:red;
+	
+}
+/* .img_list ul li a::before{
+	display:block;
+	box-sizing: border-box;
+	content:'';
+	position: absolute;
+	background-color: #262626b7;
+	height: 40px;
+	width: 40px;
+	opacity: 0.5;
+} */
+
+
+/* day picker page */
+div.time{
+	margin: 10px;
+}
+div.day{
+	padding: 10px;
+}
+div.clock input {
+	min-width: 80px;
+	border-style:none;
+	border-radius: 10px;
+	text-align: center;
+	font-size:1.1rem;
+	background-color: #5c5c5c;
+	padding: 5px 0px;
+	float:right;
+
+}
+div.clock>div{
+	display:table;
+	min-width: max-content;
+}
+div.clock input:hover + label{
+	color: #f2f2eb;
+}
+div.clock label {
+	font-weight: bold;
+	color: #262626;
+	font-size: 1rem;
+	padding: 5px;
+	float:left;
+}
+
+div.type_list ul,
+div.day ul{
+	text-align: center;
+	padding:0;
+	margin-top: 30px;
+	clear: both;
+}
+diV.type_list label,
+div.day label {
+	color: #f2f2eb59;
+}
+input {
+	appearance: none;
+}
+div.group {
+	display: none;
+}
+div.active{
+	display: block;
+}
+div.group_type{
+	padding:20px;
+}
+div.type_list ul li,
+div.day ul li{
+	 font-size: 0.8rem;
+	 line-height: 1.5rem;
+}
+div.type_list input:checked + label,
+div.day input:checked + label {
+	color:#f2f2eb;
+}
+div.btns{
+	display:flex;
+	justify-content: space-between;
+	
+}
+div.btns button{
+	box-sizing: border-box;
+	cursor:pointer;
+	border:none;
+	background-color:#404040;
+	color: #f2f2eb;
+	padding: 10px;
+	border-radius:10px;
+	min-width: 100px;
+}

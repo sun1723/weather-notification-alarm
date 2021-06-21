@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link  href="../node_modules/pickerjs/dist/picker.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/form.css">
+	<script src="../node_modules/pickerjs/dist/picker.js" defer></script>
+	<script src="../js/form.js" defer></script>
+	<title>Home Page</title>
+</head>
+<body>
+	<main>
+		<form action = "/" method = "POST">
+		<div class="group group_start  ">
+			<p align="justify">
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+			</p>
+			<button class="start">Start</button>
+		</div>
+		<div class="group group_type active">
+			<div class="img_list">
+				<ul>
+					<li><a><img class="sunny" src="../src/images/sunny.png" alt="sunny weather"></a></li>
+					<li><a><img class="cloudy" src="../src/images/NicePng_cloudy-png_1221154.png" alt="cloudy weather"></a></li>
+					<li><a><img class="rainy" src="../src/images/Rainy-01.png" alt="rainy weather"></a></li>
+					<li><a><img class="stormy" src="../src/images/stormy-weather.png" alt="stormy weather"></a></li>
+				
+				</ul>
+			</div>
+			<div class="type_list">
+				<ul>
+					<li>
+						<input type="checkbox" id="sunny">
+						<label for="sunny">Sunny</label>
+						
+					</li>
+					<li>
+						<input type="checkbox" id="cloudy">
+						<label for="cloudy">Cloudy</label>
+						
+					</li>
+					<li>
+						<input type="checkbox" id="rainy">
+						<label for="rainy">Rainy</label>
+						
+					</li>
+					<li>
+						<input type="checkbox" id="stormy">
+						<label for="stormy">Stormy</label>
+						
+					</li>
+					
+				</ul>
+			</div>
+			<div class="btns">
+				<button class="pre">< Back</button>
+				<button class="next">Next ></button>
+			</div>
+		</div>
+		<div class="group time ">
+			<div class="clock">
+				<div>
+					<input id="clock" type="text" class="form-control js-time-picker" value="02:56">
+					<label for="clock">time picker</label>
+					
+				</div>
+				<div class="container">
+					
+				</div>
+			</div>
+			<div class="day">
+				<ul>
+					<li>
+						<input type="checkbox" id="mon">
+						<label for="mon">Monday</label>
+						
+					</li>
+					<li>
+						<input type="checkbox" id="tue">
+						<label for="tue">Tuesday</label>
+						
+					</li>
+					<li>
+						<input type="checkbox" id="wed">
+						<label for="wed">Wednesday</label>
+						
+					</li>
+					<li>
+						<input type="checkbox" id="thur">
+						<label for="thur">Thursday</label>
+						
+					</li>
+					<li>
+						<input type="checkbox" id="fri">
+						<label for="fri">Friday</label>
+						
+					</li>
+					<li>
+						<input type="checkbox" id="sat">
+						<label for="sat">Saturday</label>
+						
+					</li>
+					<li>
+						<input type="checkbox" id="sun">
+						<label for="sun">Sunday</label>
+						
+					</li>
+				</ul>
+			</div>
+			<div class="btns">
+				<button class="pre">< Back</button>
+				<button class="next">Next ></button>
+			</div>
+		</div>
+		<div class="group group_finish ">
+			<p align="justify">
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+				Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+				when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+				It has survived not only five centuries, but also the leap into electronic typesetting, 
+				remaining essentially unchanged. 
+			</p>
+			<div class="btns">
+				<button class="pre">< Back</button>
+				<button class="finish" type="submit">Finish</button>
+				
+			</div>
+		</div>
+	</form>
+	</main>
+	
+</body>
+</html>
